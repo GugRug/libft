@@ -6,13 +6,13 @@
 /*   By: gumartin <gumartin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 06:20:29 by gumartin          #+#    #+#             */
-/*   Updated: 2020/02/19 18:41:14 by gumartin         ###   ########.fr       */
+/*   Updated: 2021/06/13 23:48:47 by gumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char *s1, char const *set)
 {
 	size_t	i;
 

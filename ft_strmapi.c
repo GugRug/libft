@@ -6,13 +6,13 @@
 /*   By: gumartin <gumartin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 22:30:37 by gumartin          #+#    #+#             */
-/*   Updated: 2020/02/19 23:16:54 by gumartin         ###   ########.fr       */
+/*   Updated: 2021/06/13 23:50:54 by gumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
 	char			*cpy;

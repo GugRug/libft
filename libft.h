@@ -6,7 +6,7 @@
 /*   By: gumartin <gumartin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 00:07:40 by gumartin          #+#    #+#             */
-/*   Updated: 2021/06/13 23:33:06 by gumartin         ###   ########.fr       */
+/*   Updated: 2021/06/13 23:51:05 by gumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct	s_list
 int		get_next_line(int fd, char **line);
 char	*ft_readbuf(int fd, int *r_fd);
 char	*ft_justdoit(char *s_line, char **line, int *r_fd);
+void	ft_strdel(char **s);
 /*
 ** libft
 */
@@ -59,12 +60,12 @@ char			*ft_strnstr(const char *haystack, const char *needle,
 int				ft_atoi(const char *str);
 void			*ft_calloc(size_t nmemb, size_t size);
 char			*ft_strdup(const char *s1);
-char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_substr(char *s, unsigned int start, size_t len);
 char			*ft_strjoin(char *s1, char *s2);
-char			*ft_strtrim(char const *s1, char const *set);
+char			*ft_strtrim(char *s1, char const *set);
 char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
-char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char			*ft_strmapi(char *s, char (*f)(unsigned int, char));
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
