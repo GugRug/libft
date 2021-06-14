@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchr_bn.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gumartin <gumartin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/01 00:19:53 by gumartin          #+#    #+#             */
-/*   Updated: 2021/06/13 23:32:33 by gumartin         ###   ########.fr       */
+/*   Created: 2021/06/13 23:25:34 by gumartin          #+#    #+#             */
+/*   Updated: 2021/06/13 23:25:44 by gumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	ft_strlen(char *str)
+int		ft_strchr_bn(char *s)
 {
-	size_t i;
+	int i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] && s[i] != '\n')
 		i++;
-	return (i);
+	if (s[i] == '\n')
+		return (i);
+	return (-1);
 }

@@ -6,7 +6,7 @@
 /*   By: gumartin <gumartin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/31 23:31:57 by gumartin          #+#    #+#             */
-/*   Updated: 2020/02/07 03:09:20 by gumartin         ###   ########.fr       */
+/*   Updated: 2021/06/13 23:22:05 by gumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,15 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 
 	i = 0;
 	j = 0;
-	if (dest == src)
+	if (dest == 0 || src == 0 || dest == src)
 		return (0);
 	while (src[j])
 		j++;
-	while (src[i] && i + 1 < size)
+	while (src[i] && i < size)
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	if (size > 0)
-		dest[i] = '\0';
+	dest[i] = '\0';
 	return (j);
 }
