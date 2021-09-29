@@ -101,6 +101,7 @@ SRCS_TO				=	$(DIR_SRCS_TO)/ft_atoi.c						\
 
 SRCS_UTILS			=	$(DIR_SRCS_UTILS)/ft_bzero.c					\
 						$(DIR_SRCS_UTILS)/ft_calloc.c					\
+						$(DIR_SRCS_UTILS)/ft_error.c					\
 						$(DIR_SRCS_UTILS)/ft_free.c						\
 						$(DIR_SRCS_UTILS)/ft_split.c
 
