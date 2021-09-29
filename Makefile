@@ -33,7 +33,8 @@ DIR_SRCS_TO			=	$(SRCS_DIR)/to
 DIR_SRCS_UTILS		=	$(SRCS_DIR)/utils
 
 # Libraries and its location
-INCLUDE				=	-I$(INCS_DIR)
+FT_DIR				=	./libs/libft
+INCLUDE				=	-I$(INCS_DIR) -I$(FT_DIR)/include
 
 # Compact to SRCS
 SRCS				=	$(SRCS_GNL)										\
@@ -92,13 +93,15 @@ SRCS_STR			=	$(DIR_SRCS_STR)/ft_strchr.c						\
 						$(DIR_SRCS_STR)/ft_strstr.c						\
 						$(DIR_SRCS_STR)/ft_strcut.c
 
-SRCS_TO				=	$(DIR_SRCS_TO)/ft_toupper.c						\
-						$(DIR_SRCS_TO)/ft_tolower.c						\
-						$(DIR_SRCS_TO)/ft_atoi.c						\
-						$(DIR_SRCS_TO)/ft_itoa.c
+SRCS_TO				=	$(DIR_SRCS_TO)/ft_atoi.c						\
+						$(DIR_SRCS_TO)/ft_atolli.c						\
+						$(DIR_SRCS_TO)/ft_itoa.c						\
+						$(DIR_SRCS_TO)/ft_toupper.c						\
+						$(DIR_SRCS_TO)/ft_tolower.c
 
 SRCS_UTILS			=	$(DIR_SRCS_UTILS)/ft_bzero.c					\
 						$(DIR_SRCS_UTILS)/ft_calloc.c					\
+						$(DIR_SRCS_UTILS)/ft_free.c						\
 						$(DIR_SRCS_UTILS)/ft_split.c
 
 # OBJS

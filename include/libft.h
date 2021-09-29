@@ -19,6 +19,9 @@
 # include <fcntl.h>
 # include <stdio.h>
 
+# define FT_MAX_INT 2147483647
+# define FT_MIN_INT -2147483648
+
 /*
 **	--------------------------------- STRUCT ----------------------------------
 */
@@ -97,16 +100,18 @@ char			*ft_substr(char *s, unsigned int start, size_t len);
 /*
 **	to
 */
-int				ft_toupper(int c);
-int				ft_tolower(int c);
 int				ft_atoi(const char *str);
+long long int	ft_atolli(const char *str);
 char			*ft_itoa(int n);
+int				ft_tolower(int c);
+int				ft_toupper(int c);
 
 /*
 **	utils
 */
 void			ft_bzero(void *s, size_t n);
 void			*ft_calloc(size_t nmemb, size_t size);
+void			ft_free_array(char **array);
 char			**ft_split(char const *s, char c);
 
 /*
